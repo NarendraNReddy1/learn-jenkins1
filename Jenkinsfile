@@ -23,7 +23,7 @@ pipeline{
     stage('Test'){
         steps{
             sh "echo this is test"
-            sh 'sleep 10'
+            // sh 'sleep 10'
         }
     }
 
@@ -40,6 +40,7 @@ pipeline{
             echo "Toggle: ${params.TOGGLE}"
             echo "Choice: ${params.CHOICE}"
             echo "Password: ${params.PASSWORD}"
+            echo "triggered test"
         }
     }      
 
